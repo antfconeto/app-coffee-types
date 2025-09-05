@@ -9,6 +9,9 @@ export declare enum SnsEventType {
     COFFEE_CREATED = "COFFEE_CREATED",
     COFFEE_UPDATED = "COFFEE_UPDATED",
     COFFEE_DELETED = "COFFEE_DELETED",
+    USER_CREATED = "USER_CREATED",
+    USER_UPDATED = "USER_UPDATED",
+    USER_DELETED = "USER_DELETED",
     ITEM_CHANGED = "ITEM_CHANGED"
 }
 export declare enum Entities {
