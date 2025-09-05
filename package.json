@@ -12,6 +12,7 @@
   },
   "author": "Antonio Francisco de Araújo Neto",
   "license": "MIT",
+  
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.25.2",
     "@aws-sdk/client-sns": "^3.882.0",
