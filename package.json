@@ -4,7 +4,7 @@
   "description": "Tipos compartilhados para app-coffee",
   "main": "dist/index.d.ts",
   "types": "dist/index.d.ts",
-  "type": "commonjs",
+  "type": "module",
   "files": [
     "dist"
   ],
