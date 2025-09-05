@@ -1,4 +1,4 @@
-import { Entities, SnsEventType, SnsEventsStatus } from "../enums/system";
+import { Entities, EventSource, SnsEventType, SnsEventsStatus } from "../enums/system";
 import { ILoggerCustom } from "../utils/logger/Ilogger";
 import { ISnsService } from "../utils/snsService/IsnsService";
 export interface ILogger {
@@ -25,7 +25,7 @@ export interface SnsEventPayload {
     eventCreatedAt: string;
     eventId: string;
     data: any;
-    eventSource: string;
+    eventSource: EventSource;
     subject: string;
     eventType: SnsEventType | Entities;
     status: SnsEventsStatus | string;
@@ -35,5 +35,6 @@ export type SnsMessageInfo = {
     eventType: SnsEventType | Entities;
     eventStatus: SnsEventType | string;
     subject?: string;
+    eventSource: EventSource;
 };
 //# sourceMappingURL=system.d.ts.map

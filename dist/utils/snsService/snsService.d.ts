@@ -27,6 +27,6 @@ export declare class SnsService implements ISnsService {
      * @returns The constructed SnsEventPayload object.
      * @throws CustomError if the snsInfo data is invalid.
      */
-    processCoffeeSnsEventPayload(snsInfo: SnsMessageInfo): SnsEventPayload;
+    processSnsEventPayload(snsInfo: SnsMessageInfo): SnsEventPayload;
 }
 //# sourceMappingURL=snsService.d.ts.map

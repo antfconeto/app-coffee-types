@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SnsService = void 0;
 const client_sns_1 = require("@aws-sdk/client-sns");
-const system_1 = require("../../enums/system");
 const customError_1 = require("../customError/customError");
 const crypto_1 = require("crypto");
 class SnsService {
@@ -56,7 +55,7 @@ class SnsService {
      * @returns The constructed SnsEventPayload object.
      * @throws CustomError if the snsInfo data is invalid.
      */
-    processCoffeeSnsEventPayload(snsInfo) {
+    processSnsEventPayload(snsInfo) {
         if (!snsInfo.data) {
             this.logger.error(`❌ Invalid data provided to process event sns body, ${JSON.stringify({ data: snsInfo.data })}`);
             throw new customError_1.CustomError(`❌ Invalid data provided to process event sns body`, 400);
@@ -65,8 +64,8 @@ class SnsService {
             eventId: (0, crypto_1.randomUUID)(),
             eventCreatedAt: new Date().toISOString(),
             data: JSON.stringify(snsInfo.data),
-            eventSource: system_1.EventSource.SVC_COFFEE,
-            subject: snsInfo.subject || "COFFEE",
+            eventSource: snsInfo.eventSource,
+            subject: snsInfo.subject || "NO_SUBJECT",
             eventType: snsInfo.eventType,
             status: snsInfo.eventStatus
         };
