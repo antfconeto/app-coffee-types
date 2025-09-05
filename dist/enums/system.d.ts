@@ -32,4 +32,12 @@ export declare enum MediaType {
     PHOTO = "PHOTO",
     VIDEO = "VIDEO"
 }
+export declare enum EventType {
+    USER_CREATED = "USER_CREATED",
+    USER_UPDATED = "USER_UPDATED",
+    USER_DELETED = "USER_DELETED",
+    COFFEE_CREATED = "COFFEE_CREATED",
+    COFFEE_UPDATED = "COFFEE_UPDATED",
+    COFFEE_DELETED = "COFFEE_DELETED"
+}
 //# sourceMappingURL=system.d.ts.map

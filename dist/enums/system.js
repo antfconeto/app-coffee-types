@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MediaType = exports.EventSource = exports.SnsEventsStatus = exports.Entities = exports.SnsEventType = exports.LogTag = void 0;
+exports.EventType = exports.MediaType = exports.EventSource = exports.SnsEventsStatus = exports.Entities = exports.SnsEventType = exports.LogTag = void 0;
 var LogTag;
 (function (LogTag) {
     LogTag["SUCCESS"] = "[SUCCESS]";
@@ -41,4 +41,13 @@ var MediaType;
     MediaType["PHOTO"] = "PHOTO";
     MediaType["VIDEO"] = "VIDEO";
 })(MediaType || (exports.MediaType = MediaType = {}));
+var EventType;
+(function (EventType) {
+    EventType["USER_CREATED"] = "USER_CREATED";
+    EventType["USER_UPDATED"] = "USER_UPDATED";
+    EventType["USER_DELETED"] = "USER_DELETED";
+    EventType["COFFEE_CREATED"] = "COFFEE_CREATED";
+    EventType["COFFEE_UPDATED"] = "COFFEE_UPDATED";
+    EventType["COFFEE_DELETED"] = "COFFEE_DELETED";
+})(EventType || (exports.EventType = EventType = {}));
 //# sourceMappingURL=system.js.map
