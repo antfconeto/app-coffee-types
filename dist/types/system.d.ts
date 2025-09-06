@@ -15,6 +15,7 @@ export type ServiceDependecies<T> = {
     entityDao?: T;
     adictionalDaos?: [];
     snsService?: ISnsService;
+    adictionalServices?: any[];
 };
 export type DaoDependecies = {
     logger: ILoggerCustom;
