@@ -18,6 +18,9 @@ var SnsEventType;
     SnsEventType["USER_UPDATED"] = "USER_UPDATED";
     SnsEventType["USER_DELETED"] = "USER_DELETED";
     SnsEventType["ITEM_CHANGED"] = "ITEM_CHANGED";
+    SnsEventType["PRODUCT_CREATED"] = "PRODUCT_CREATED";
+    SnsEventType["PRODUCT_UPDATED"] = "PRODUCT_UPDATED";
+    SnsEventType["PRODUCT_DELETED"] = "PRODUCT_DELETED";
 })(SnsEventType || (exports.SnsEventType = SnsEventType = {}));
 var Entities;
 (function (Entities) {
@@ -25,6 +28,7 @@ var Entities;
     Entities["COFFEE"] = "COFFEE";
     Entities["CATEGORY"] = "CATEGORY";
     Entities["REVIEW"] = "REVIEW";
+    Entities["PRODUCT"] = "PRODUCT";
     Entities["PERMISSION"] = "PERMISSION";
 })(Entities || (exports.Entities = Entities = {}));
 var SnsEventsStatus;
@@ -52,5 +56,8 @@ var EventType;
     EventType["COFFEE_CREATED"] = "COFFEE_CREATED";
     EventType["COFFEE_UPDATED"] = "COFFEE_UPDATED";
     EventType["COFFEE_DELETED"] = "COFFEE_DELETED";
+    EventType["PRODUCT_CREATED"] = "PRODUCT_CREATED";
+    EventType["PRODUCT_UPDATED"] = "PRODUCT_UPDATED";
+    EventType["PRODUCT_DELETED"] = "PRODUCT_DELETED";
 })(EventType || (exports.EventType = EventType = {}));
 //# sourceMappingURL=system.js.map
