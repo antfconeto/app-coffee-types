@@ -6,10 +6,27 @@ export type User = {
     email: string;
     photoUrl: string;
     permissions: string[];
+    cards: Card[];
     createdAt: string;
     updatedAt: string;
 };
-type FirebaseUserMetadata = {
+export type Card = {
+    id: string;
+    name: string;
+    items: Item[];
+    totalPrice: number;
+    totalQuantity: number;
+    createdAt: string;
+    updatedAt: string;
+};
+export type Item = {
+    id: string;
+    name: string;
+    price: number;
+    unitPrice: string;
+    quantity: number;
+};
+export type FirebaseUserMetadata = {
     creationTime: string;
     lastSignInTime: string;
 };
@@ -31,5 +48,4 @@ export type FirebaseAuthEvent = {
     eventType: string;
     status: string;
 };
-export {};
 //# sourceMappingURL=user.d.ts.map
