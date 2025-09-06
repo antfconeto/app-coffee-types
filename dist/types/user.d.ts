@@ -13,13 +13,13 @@ export type User = {
 export type Card = {
     id: string;
     name: string;
-    items: Item[];
+    items: CardItem[];
     totalPrice: number;
     totalQuantity: number;
     createdAt: string;
     updatedAt: string;
 };
-export type Item = {
+export type CardItem = {
     id: string;
     name: string;
     price: number;
