@@ -12,7 +12,7 @@ export type Purchase = {
 export type Item = {
     name: string;
     type: PurchaseItemType;
-    product: Omit<IProduct, 'medias'>;
+    product: Omit<IProduct, 'medias' | 'weight' | 'weightUnit' | 'description'>;
     discount: {
         type: DiscountType;
         value: number;

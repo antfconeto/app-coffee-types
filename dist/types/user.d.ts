@@ -23,6 +23,7 @@ export type CardItem = {
     id: string;
     name: string;
     price: number;
+    ownerId: string;
     currency: string;
     quantity: number;
 };
