@@ -23,7 +23,7 @@ export type CardItem = {
     id: string;
     name: string;
     price: number;
-    unitPrice: string;
+    currency: string;
     quantity: number;
 };
 export type FirebaseUserMetadata = {
