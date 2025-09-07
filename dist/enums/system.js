@@ -30,6 +30,7 @@ var Entities;
     Entities["REVIEW"] = "REVIEW";
     Entities["PRODUCT"] = "PRODUCT";
     Entities["PERMISSION"] = "PERMISSION";
+    Entities["PURCHASE"] = "PURCHASE";
 })(Entities || (exports.Entities = Entities = {}));
 var SnsEventsStatus;
 (function (SnsEventsStatus) {
@@ -59,5 +60,8 @@ var EventType;
     EventType["PRODUCT_CREATED"] = "PRODUCT_CREATED";
     EventType["PRODUCT_UPDATED"] = "PRODUCT_UPDATED";
     EventType["PRODUCT_DELETED"] = "PRODUCT_DELETED";
+    EventType["PURCHASE_CREATED"] = "PURCHASE_CREATED";
+    EventType["PURCHASE_UPDATED"] = "PURCHASE_UPDATED";
+    EventType["PURCHASE_DELETED"] = "PURCHASE_DELETED";
 })(EventType || (exports.EventType = EventType = {}));
 //# sourceMappingURL=system.js.map
