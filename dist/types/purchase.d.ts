@@ -1,4 +1,5 @@
 import { DiscountType, PurchaseItemType, PurchaseStatus, PurchaseType } from "../enums/purchase";
+import { IProduct } from "./product";
 export type Purchase = {
     id: string;
     items: Item[];
@@ -11,12 +12,7 @@ export type Purchase = {
 export type Item = {
     name: string;
     type: PurchaseItemType;
-    product: {
-        id: string;
-        price: number;
-        quantity: number;
-        currency: string;
-    };
+    product: Omit<IProduct, 'medias'>;
     discount: {
         type: DiscountType;
         value: number;
