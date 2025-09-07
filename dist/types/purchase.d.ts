@@ -2,6 +2,7 @@ import { DiscountType, PurchaseItemType, PurchaseStatus, PurchaseType } from "..
 export type Purchase = {
     id: string;
     items: Item[];
+    userId: string;
     status: PurchaseStatus;
     type: PurchaseType;
     createdAt: string;
