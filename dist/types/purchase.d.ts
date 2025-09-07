@@ -13,7 +13,7 @@ export type Item = {
     name: string;
     type: PurchaseItemType;
     product: IProductItem;
-    discount: {
+    discount?: {
         type: DiscountType;
         value: number;
     };
