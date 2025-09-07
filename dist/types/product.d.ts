@@ -10,4 +10,12 @@ export interface IProduct {
     weight: number;
     weightUnit: string;
 }
+export interface IProductItem {
+    id: string;
+    name: string;
+    description: string;
+    ownerId: string;
+    price: number;
+    currency: string;
+}
 //# sourceMappingURL=product.d.ts.map
