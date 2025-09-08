@@ -13,6 +13,7 @@ export type Item = {
     name: string;
     type: PurchaseItemType;
     product: IProductItem;
+    quantity: number;
     discount?: {
         type: DiscountType;
         value: number;
